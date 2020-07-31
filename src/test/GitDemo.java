@@ -19,7 +19,7 @@ public class GitDemo {
 	public void dupArray(int[] ar) {
 		for (int i = 0; i < ar.length; i++) {
 			for (int j = i+1; j < ar.length; j++) {
-				if(ar[i]==ar[j]){
+				if(ar[i]==ar[j]){//check if two elements are the same
 					System.out.println("==========================");
 					System.out.println("The duplicate array element is "+ ar[i]);
 				}
@@ -28,7 +28,7 @@ public class GitDemo {
 	}
 
 	public static void main(String[] args) {
-		GitDemo obj = new GitDemo();
+		GitDemo obj = new GitDemo();//for non-static method we create object
 
 		int[] arr = obj.displayArray(new Scanner(System.in));
 		
